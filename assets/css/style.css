@@ -27,6 +27,18 @@ h2 {
 #portfolio {
     background-color: #dbdcde;
 }
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+#portfolio .btn-outline-secondary:hover {
+    background-color:#1f7798;
+}
+
+#portfolio .card-text {
+    /* by applying min-height 120px in this case all cards will have same hight */
+    min-height: 120px;
+}
 /* Contact */
 #contact {
     background-color: #ffffff;
@@ -39,4 +51,29 @@ h2 {
     min-height: 500px;
     padding: 5% 7%;
     
+}
+.sharp-corners,
+/* wildcard * sellect all elements that have parent with the sharp corners class */
+.sharp-corners * {
+    border-radius: 0;
+}
+
+form .sharp-corners
+form .sharp-corners * {
+    border-radius: 0;
+}
+div .modal-body .sharp-corners,
+div .text-center .sharp-corners {
+    border-radius: 0;
+}
+
+/* media queries */
+
+/* use the same break points for XL screens as bootstrap */
+@media screen and (min-width:1200px) {
+
+/* fixes all portfolio cards being too tall on xl screens*/
+#portfolio .card-text {
+    min-height: auto;
+}
 }
