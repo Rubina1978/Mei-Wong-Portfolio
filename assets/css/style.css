@@ -66,7 +66,15 @@ div .modal-body .sharp-corners,
 div .text-center .sharp-corners {
     border-radius: 0;
 }
-
+/* buttons */
+.custom-button {
+    background-color: #1f7798;
+    border:#1f7798;
+}
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border:#1d6d8a;
+}
 /* media queries */
 
 /* use the same break points for XL screens as bootstrap */
